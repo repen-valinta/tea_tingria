@@ -9,7 +9,7 @@
 
 <style>
 	footer {
-		background: var(--accent-xxdark);
+		background: var(--accent-base);
 	}
 	.footer-content {
 		padding-block: 1rem;
