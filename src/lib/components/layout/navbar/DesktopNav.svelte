@@ -45,7 +45,7 @@
 		}
 	}
 
-	@media (max-width > 680px) {
+	@media (width > 680px) {
 		.nav-content {
 			display: none;
 		}
