@@ -5,7 +5,7 @@
 <nav>
 	<div class="nav-content wrapper">
 		<a class="nav-logo" href={resolve('/')}>
-			<img src="/icons/logo-transparent.png" alt="logo" title="logo" height="36" />
+			<img src="/icons/logo-transparent-comp.png" alt="logo" title="logo" height="36" />
 		</a>
 		<div class="nav-links">
 			<a href={resolve('/')}>Etusivu</a>
@@ -18,20 +18,32 @@
 
 <style>
 	nav {
-		padding: 1rem;
-		background-color: var(--accent-xxdark);
+		background-color: rgba(from var(--neutral-xxdark) r g b / 0.25);
+		backdrop-filter: blur(16px);
+		height: var(--nav-height);
+		position: fixed;
+		inset: 0;
+		z-index: 10;
+		font-size: 1.125rem;
+		letter-spacing: 0.025em;
 	}
 
 	.nav-content {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		gap: 2rem;
+		position: relative;
+		height: 100%;
 	}
 
 	.nav-logo {
 		display: grid;
 		place-items: center;
+		position: absolute;
+		top: 50%;
+		left: 1rem;
+		transform: translateY(-50%);
 
 		& img {
 			transform: translateY(4px);
@@ -41,5 +53,9 @@
 	.nav-links {
 		display: flex;
 		gap: 2rem;
+
+		& a:hover {
+			color: var(--accent-light);
+		}
 	}
 </style>

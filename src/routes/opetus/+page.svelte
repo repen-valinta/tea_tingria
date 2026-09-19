@@ -1,1 +1,3 @@
-<h1>opetus</h1>
+<main>
+	<h1>opetus</h1>
+</main>

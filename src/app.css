@@ -22,6 +22,12 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	height: 100%;
+	padding-bottom: 2rem;
+
+	&:not(.home-page) {
+		padding-top: var(--nav-height);
+	}
 }
 
 /* HEADERS */
@@ -45,6 +51,9 @@ a {
 	/* FONTS */
 	--font-heading: 'Cinzel', serif;
 	--font-body: 'Manrope', sans-serif;
+
+	/* HEIGHTS */
+	--nav-height: min(4rem, 80px);
 
 	/* COLORS */
 	--text-dark: var(--neutral-xxdark);
