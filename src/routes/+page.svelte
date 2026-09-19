@@ -11,26 +11,30 @@
 
 <main class="home-page">
 	<Video />
-	<div class="home-header wrapper">
-		<h1>Olen Tea Tingria</h1>
-		<h2>-esiintyjä, sirkusohjaaja ja yrittäjä</h2>
-	</div>
-	<p class="bigger-text text-center-balance text-wrapper wrapper">
-		Yhdistelen esityksissäni eri sirkuselementtejä uniikilla ja naisellisella tavalla, ja
-		näyttävillä tunnelmanvaihdoksilla.
-	</p>
-	<div class="wrapper text-wrapper">
-		<p>
-			Ohjaan ryhmäyttävänä toimintana vannetanssia ja sirkusta matalan kynnyksen lajikokeiluja,
-			esimerkiksi polttareihin, tyhy-päiviin ja yksityistilaisuuksiin. Ohjaukset sujuvat myös
-			varmalla otteella, ja pidän myös huolen siitä että ohjaukset ovat sopivantasoisia oppilaille,
-			ja että tunnelma on hauska ja rento.
+	<div class="home-page-content">
+		<div class="home-header wrapper">
+			<h1>Olen Tea Tingria</h1>
+			<h2>-esiintyjä, sirkusohjaaja ja yrittäjä</h2>
+		</div>
+		<p class="text-wrapper text-center-balance bigger-text wrapper">
+			Yhdistelen esityksissäni eri sirkuselementtejä uniikilla ja naisellisella tavalla, ja
+			näyttävillä tunnelmanvaihdoksilla.
 		</p>
-		<div class="testimonial bigger-text">
-			"Oli ilo osallistua Tean työpajaan. Opetusta oli helppo seurata, ja tempuista löytyi
-			variaatioita eritasoisille oppilaille. Tean opetustyyli on motivoiva ja hyvin suunniteltu, ja
-			hänen ohjeistuksensa auttoivat paljon myös vaativampien temppujen opettelussa."
-			<p>- Clara Jobs</p>
+		<div class="text-wrapper wrapper">
+			<p>
+				Ohjaan ryhmäyttävänä toimintana vannetanssia ja sirkusta matalan kynnyksen lajikokeiluja,
+				esimerkiksi polttareihin, tyhy-päiviin ja yksityistilaisuuksiin. Ohjaukset sujuvat myös
+				varmalla otteella, ja pidän myös huolen siitä että ohjaukset ovat sopivantasoisia
+				oppilaille, ja että tunnelma on hauska ja rento.
+			</p>
+			<div class="testimonial bigger-text">
+				<p>
+					"Oli ilo osallistua Tean työpajaan. Opetusta oli helppo seurata, ja tempuista löytyi
+					variaatioita eritasoisille oppilaille. Tean opetustyyli on motivoiva ja hyvin suunniteltu,
+					ja hänen ohjeistuksensa auttoivat paljon myös vaativampien temppujen opettelussa."
+				</p>
+				<p class="testimonial-name">- Clara Jobs</p>
+			</div>
 		</div>
 	</div>
 </main>
@@ -44,8 +48,24 @@
 		padding: 2rem 0 1.5rem;
 	}
 
+	.home-page-content {
+		background: linear-gradient(to bottom, black, var(--neutral-xxdark));
+		position: relative;
+		background:
+			radial-gradient(
+				ellipse at 10% 15%,
+				rgb(from var(--accent-base) r g b / 0.3),
+				transparent 40%
+			),
+			radial-gradient(
+				ellipse at 90% 70%,
+				rgb(from var(--accent-dark) r g b / 0.22),
+				transparent 35%
+			),
+			linear-gradient(180deg, #000 0%, var(--neutral-xdark) 25%, var(--neutral-xxdark) 100%);
+	}
+
 	.testimonial {
-		border: 1px solid var(--accent-base);
 		border-radius: var(--radius-m);
 		background-color: var(--accent-xlight);
 		font-style: italic;
@@ -56,6 +76,10 @@
 		margin-top: 1.5rem;
 		text-align: center;
 		font-size: 1.35rem;
+		margin: 1.5rem auto 0;
+		box-shadow:
+			inset 4px 4px 16px rgb(from white r g b / 0.5),
+			4px 4px 16px rgb(from var(--accent-xlight) r g b / 0.5);
 
 		@media (width <= 680px) {
 			font-size: 1.25rem;
@@ -65,5 +89,9 @@
 		& p {
 			text-align: center;
 		}
+	}
+
+	.testimonial-name {
+		color: var(--text-dark-muted);
 	}
 </style>

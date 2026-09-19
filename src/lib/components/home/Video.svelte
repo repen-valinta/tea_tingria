@@ -31,7 +31,6 @@
 	.hero-video {
 		width: 100%;
 		height: 100%;
-		pointer-events: none;
 		object-fit: cover;
 	}
 </style>

@@ -11,10 +11,11 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	font-size: clamp(0.875rem, 1vw + 0.75rem, 1.125rem);
+	font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
 	font-family: var(--font-body);
 	color: var(--text-light);
 	background-color: var(--neutral-xxdark);
+
 	line-height: 1.4;
 }
 
@@ -64,7 +65,7 @@ a {
 
 	/* COLORS */
 	--text-dark: var(--neutral-xxdark);
-	--text-dark-muted: var(--neutral-dark);
+	--text-dark-muted: var(--neutral-base);
 	--text-light: var(--neutral-xxlight);
 	--text-light-muted: var(--neutral-light);
 
