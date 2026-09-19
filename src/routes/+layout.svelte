@@ -12,6 +12,17 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<Navbar />
-{@render children()}
-<Footer />
+<div class="layout-container">
+	<Navbar />
+	{@render children()}
+	<Footer />
+</div>
+
+<style>
+	.layout-container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+	}
+</style>
