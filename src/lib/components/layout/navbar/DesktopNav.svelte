@@ -1,31 +1,26 @@
-<script lang="ts">
+<script>
 	import { resolve } from '$app/paths';
+	import NavLinks from './NavLinks.svelte';
 </script>
 
-<nav>
+<div class="desktop-nav">
 	<div class="nav-content wrapper">
 		<a class="nav-logo" href={resolve('/')}>
-			<img src="/icons/logo-transparent-comp.png" alt="logo" title="logo" height="36" />
+			<img src="/icons/logo-transparent-comp.png" alt="logo" title="logo" height="48" />
 		</a>
-		<div class="nav-links">
-			<a href={resolve('/')}>Etusivu</a>
-			<a href={resolve('/esitykset')}>Esitykset</a>
-			<a href={resolve('/opetus')}>Opetus</a>
-			<a href={resolve('/yhteystiedot')}>Yhteystiedot</a>
-		</div>
+		<NavLinks />
 	</div>
-</nav>
+</div>
 
 <style>
-	nav {
+	.desktop-nav {
 		background-color: rgba(from var(--neutral-xxdark) r g b / 0.25);
 		backdrop-filter: blur(16px);
 		height: var(--nav-height);
-		position: fixed;
-		inset: 0;
-		z-index: 10;
-		font-size: 1.125rem;
-		letter-spacing: 0.025em;
+
+		@media (width < 680px) {
+			display: none;
+		}
 	}
 
 	.nav-content {
@@ -50,12 +45,9 @@
 		}
 	}
 
-	.nav-links {
-		display: flex;
-		gap: 2rem;
-
-		& a:hover {
-			color: var(--accent-light);
+	@media (width > 680px) {
+		.nav-content {
+			display: none;
 		}
 	}
 </style>
