@@ -11,7 +11,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+	font-size: clamp(0.875rem, 1vw + 0.75rem, 1.125rem);
 	font-family: var(--font-body);
 	color: var(--text-light);
 	background-color: var(--neutral-xxdark);
@@ -55,6 +55,13 @@ a {
 	/* HEIGHTS */
 	--nav-height: min(4rem, 80px);
 
+	/* BORDER RADIUS */
+	--radius-xs: 2px;
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 16px;
+	--radius-xl: 32px;
+
 	/* COLORS */
 	--text-dark: var(--neutral-xxdark);
 	--text-dark-muted: var(--neutral-dark);
@@ -69,8 +76,8 @@ a {
 	--neutral-xdark: #1d1d1d;
 	--neutral-xxdark: #0b0b0b;
 
-	--accent-xxlight: #faf6fe;
-	--accent-xlight: #f3eafd;
+	--accent-xxlight: #f3eafd;
+	--accent-xlight: #d7baf8;
 	--accent-light: #be8df3;
 	--accent-base: #8f41dc;
 	--accent-dark: #7a2fc1;
@@ -90,7 +97,7 @@ a {
 	--neutral-950: #0b0b0b;
 
 	--accent: #e3cffb;
-	--accent-50: #faf6fe;
+	--accent-50: ##d7baf8;
 	--accent-100: #f3eafd;
 	--accent-200: #e3cffb;
 	--accent-300: #d7baf8;
