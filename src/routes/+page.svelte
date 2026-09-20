@@ -12,7 +12,7 @@
 <main class="home-page">
 	<Video />
 	<div class="home-page-content">
-		<div class="home-header wrapper">
+		<div class="home-header">
 			<h1>Olen Tea Tingria</h1>
 			<h2>-esiintyjä, sirkusohjaaja ja yrittäjä</h2>
 		</div>
@@ -45,24 +45,12 @@
 		text-align: center;
 		display: flex;
 		flex-direction: column;
-		padding: 2rem 0 1.5rem;
+		padding: 2rem 1.5rem 1.5rem;
 	}
 
 	.home-page-content {
-		background: linear-gradient(to bottom, black, var(--neutral-xxdark));
 		position: relative;
-		background:
-			radial-gradient(
-				ellipse at 10% 15%,
-				rgb(from var(--accent-base) r g b / 0.3),
-				transparent 40%
-			),
-			radial-gradient(
-				ellipse at 90% 70%,
-				rgb(from var(--accent-dark) r g b / 0.22),
-				transparent 35%
-			),
-			linear-gradient(180deg, #000 0%, var(--neutral-xdark) 25%, var(--neutral-xxdark) 100%);
+		background: var(--bg);
 	}
 
 	.testimonial {
