@@ -1,9 +1,11 @@
 <script lang="ts">
 	import DesktopNav from './DesktopNav.svelte';
+	import MobileNav from './MobileNav.svelte';
 </script>
 
 <nav>
 	<DesktopNav />
+	<MobileNav />
 </nav>
 
 <style>

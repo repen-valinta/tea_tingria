@@ -28,6 +28,7 @@ main {
 
 	&:not(.home-page) {
 		padding-top: var(--nav-height);
+		background: var(--bg);
 	}
 }
 
@@ -62,6 +63,12 @@ a {
 	--radius-m: 8px;
 	--radius-l: 16px;
 	--radius-xl: 32px;
+
+	/* BACKGROUND */
+	--bg:
+		radial-gradient(ellipse at 10% 15%, rgb(from var(--accent-base) r g b / 0.3), transparent 40%),
+		radial-gradient(ellipse at 90% 70%, rgb(from var(--accent-dark) r g b / 0.22), transparent 35%),
+		linear-gradient(180deg, #000 0%, var(--neutral-xdark) 25%, var(--neutral-xxdark) 100%);
 
 	/* COLORS */
 	--text-dark: var(--neutral-xxdark);

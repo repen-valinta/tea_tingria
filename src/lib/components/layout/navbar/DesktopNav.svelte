@@ -18,7 +18,7 @@
 		backdrop-filter: blur(16px);
 		height: var(--nav-height);
 
-		@media (width < 680px) {
+		@media (width <= 680px) {
 			display: none;
 		}
 	}
