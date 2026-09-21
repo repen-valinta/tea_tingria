@@ -1,17 +1,17 @@
 <script>
 	import EsitysHeader from '$lib/components/esitykset/EsitysHeader.svelte';
+	import EsitysInfo from '$lib/components/esitykset/EsitysInfo.svelte';
 	import EsitysSection from '$lib/components/esitykset/EsitysSection.svelte';
+	import VideoComponent from '$lib/components/shared/VideoComponent.svelte';
 </script>
 
 <main>
 	<EsitysHeader header="Monivanne" />
-	<EsitysSection
-		sectionHeader="Bangarang"
-		video={{
-			source: '/video/monivanne/bangarang.mp4',
-			poster: ''
-		}}
-		info="'Bangarang' on kaikista uusin ja raikkain numero ja energinen pläjäys vuosien varrelta koottuja lempitemppuja. Tunnelma vaihtuu tummanpuhuvasta dynaamiseen ja näyttävään lopetukseen vanteiden määrän kasvaessa maksimiin!"
-		vaatimus="Tilavaatimus minimi 3x3m, kesto 3:30 min"
-	/>
+	<EsitysSection sectionHeader="Bangarang">
+		<VideoComponent source="/video/monivanne/bangarang.mp4" poster="" />
+		<EsitysInfo
+			info="'Bangarang' on kaikista uusin ja raikkain numero ja energinen pläjäys vuosien varrelta koottuja lempitemppuja. Tunnelma vaihtuu tummanpuhuvasta dynaamiseen ja näyttävään lopetukseen vanteiden määrän kasvaessa maksimiin!"
+			vaatimus="Tilavaatimus minimi 3x3m, kesto 3:30 min"
+		/>
+	</EsitysSection>
 </main>

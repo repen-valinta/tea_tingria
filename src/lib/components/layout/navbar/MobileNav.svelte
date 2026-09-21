@@ -46,8 +46,7 @@
 	.nav-mobile-logo {
 		display: grid;
 		place-items: center;
-		position: absolute;
-		top: 50%;
+		position: relative;
 		left: 1rem;
 		top: 1rem;
 
