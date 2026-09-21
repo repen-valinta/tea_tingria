@@ -20,7 +20,7 @@
 		overflow: hidden;
 		position: relative;
 		border-radius: var(--radius-l);
-		height: min(80svh, 800px);
+		height: min(60svh, 800px);
 
 		@media (width <= 680px) {
 			height: min(60svh, 600px);

@@ -66,7 +66,7 @@
 		gap: 0.25rem;
 
 		&:hover {
-			color: var(--accent-light);
+			color: var(--accent-xlight);
 		}
 	}
 
