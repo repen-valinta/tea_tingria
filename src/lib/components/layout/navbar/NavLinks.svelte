@@ -1,5 +1,7 @@
 <script lang="ts">
+	import EsityksetDropdown from './EsityksetDropdown.svelte';
 	import { resolve } from '$app/paths';
+	import { page } from '$app/state';
 
 	let { onNavigate }: { onNavigate?: () => void } = $props();
 
@@ -7,10 +9,6 @@
 		{
 			to: '/',
 			link: 'Etusivu'
-		},
-		{
-			to: '/esitykset',
-			link: 'Esitykset'
 		},
 		{
 			to: '/opetus',
@@ -21,13 +19,19 @@
 			link: 'Yhteystiedot'
 		}
 	] as const;
-
 </script>
 
 <ul class="nav-links">
 	{#each navLinks as navLink (navLink.to)}
+		{#if navLink.to === '/opetus'}
+			<EsityksetDropdown {onNavigate} />
+		{/if}
 		<li>
-			<a href={resolve(navLink.to)} onclick={() => onNavigate?.()}>{navLink.link}</a>
+			<a
+				href={resolve(navLink.to)}
+				onclick={() => onNavigate?.()}
+				aria-current={page.route.id === navLink.to ? 'page' : undefined}>{navLink.link}</a
+			>
 		</li>
 	{/each}
 </ul>
@@ -45,7 +49,15 @@
 		}
 
 		& a:hover {
-			color: var(--accent-light);
+			color: var(--accent-xlight);
+		}
+
+		& a[aria-current='page'] {
+			font-weight: 600;
+
+			&:hover {
+				color: inherit;
+			}
 		}
 	}
 </style>

@@ -20,7 +20,7 @@
 			Yhdistelen esityksissäni eri sirkuselementtejä uniikilla ja naisellisella tavalla, ja
 			näyttävillä tunnelmanvaihdoksilla.
 		</p>
-		<div class="text-wrapper wrapper">
+		<div class="text-wrapper wrapper bigger-text-sm">
 			<p>
 				Ohjaan ryhmäyttävänä toimintana vannetanssia ja sirkusta matalan kynnyksen lajikokeiluja,
 				esimerkiksi polttareihin, tyhy-päiviin ja yksityistilaisuuksiin. Ohjaukset sujuvat myös

@@ -9,13 +9,17 @@
 	font-size: 1.25rem;
 }
 
+.bigger-text-sm {
+	font-size: 1.125rem;
+}
+
 .text-center-balance {
 	text-wrap: balance;
 	text-align: center;
 }
 
 .text-wrapper {
-	width: min(100%, 800px);
+	width: min(100%, 1000px);
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
