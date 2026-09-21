@@ -8,6 +8,11 @@
 	import kissaToinen from '$lib/assets/images/esitykset/kurnauskis.webp';
 </script>
 
+<svelte:head>
+	<title>Aluehahmot - Tea Tingria</title>
+	<meta name="description" content="Ledi kissat tuovat tapahtumiin leikkisää tunnelmaa!" />
+</svelte:head>
+
 <main>
 	<EsitysHeader header="Aluehahmot" />
 	<EsitysSection
@@ -34,9 +39,13 @@
 	.img-grid {
 		display: grid;
 		width: 100%;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		place-items: center;
 		gap: 2rem;
-		max-width: 1000px;
+		max-width: 800px;
+
+		/* display: flex;
+		gap: 1rem;
+		width: 100%; */
 	}
 </style>

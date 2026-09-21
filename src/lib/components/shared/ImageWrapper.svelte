@@ -19,16 +19,21 @@
 <style>
 	.image-wrapper {
 		display: flex;
-		width: 100%;
-		height: var(--image-height);
-		border-radius: var(--radius-m);
+		justify-content: center;
+		max-width: 100%;
 		overflow: hidden;
+		border-radius: var(--radius-m);
+	}
+
+	.image-wrapper :global(picture) {
+		display: contents;
 	}
 
 	.image-wrapper :global(img) {
-		width: 100%;
-		height: 100%;
+		width: auto;
+		height: var(--image-height); /* 'auto' by default */
+		max-width: 100%;
+		max-height: 500px;
 		object-fit: var(--image-fit);
-		border-radius: inherit;
 	}
 </style>
