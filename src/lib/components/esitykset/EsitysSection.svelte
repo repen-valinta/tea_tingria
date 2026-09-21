@@ -28,13 +28,13 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 2rem;
+		gap: 1rem;
 		padding-top: 1rem;
 		padding-bottom: 3rem;
 		width: 95%;
 
 		&:not(:first-child) {
-			padding-top: 2rem;
+			padding-top: 1rem;
 		}
 
 		&:not(:last-child) {

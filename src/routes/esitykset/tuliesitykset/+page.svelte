@@ -2,10 +2,19 @@
 	import EsitysHeader from '$lib/components/esitykset/EsitysHeader.svelte';
 	import EsitysInfo from '$lib/components/esitykset/EsitysInfo.svelte';
 	import EsitysSection from '$lib/components/esitykset/EsitysSection.svelte';
+	import VideoComponent from '$lib/components/shared/VideoComponent.svelte';
 </script>
+
+<svelte:head>
+	<title>Tuliesitykset - Tea Tingria</title>
+	<meta name="description" content="Näyttävät tulishowt isoilla liekeillä!" />
+</svelte:head>
 
 <main>
 	<EsitysHeader header="Tuliesitykset" />
+	<div class="wrapper">
+		<VideoComponent source="/video/tuli/fire-teaser.mp4" poster="" />
+	</div>
 	<EsitysSection sectionHeader="Quattro">
 		<EsitysInfo
 			info="Mieleenpainuva tulishow Quattro on yhden naisen soolotulishow isoilla liekeillä ja vahvoilla tunnelmanvaihdoksilla."
