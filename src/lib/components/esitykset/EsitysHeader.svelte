@@ -43,6 +43,7 @@
 		column-gap: 1.25rem;
 		row-gap: 0.5rem;
 		font-size: 0.95em;
+		width: 100%;
 
 		& a {
 			&:hover {

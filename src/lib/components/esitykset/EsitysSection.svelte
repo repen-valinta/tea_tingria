@@ -1,4 +1,10 @@
 <script lang="ts">
+	import VideoComponent from '../shared/VideoComponent.svelte';
+
+	type videoProps = {
+		source: string;
+		poster: string;
+	};
 	type Props = {
 		sectionHeader: string;
 		subHeader?: string;
@@ -6,7 +12,7 @@
 		info: string;
 		extraInfo?: string;
 		vaatimus?: string;
-		video?: string;
+		video?: videoProps;
 	};
 
 	let { sectionHeader, subHeader, teaser, info, extraInfo, vaatimus, video }: Props = $props();
@@ -20,12 +26,10 @@
 	{/if}
 
 	{#if video}
-		<video muted autoplay loop playsinline aria-hidden="true" poster="">
-			<source src={video} type="video/mp4" />
-		</video>
+		<VideoComponent source={video.source} poster={video.poster} />
 	{/if}
 
-	<div class="esitys-section-content bigger-text-sm wrapper">
+	<div class="esitys-section-content bigger-text-sm">
 		{#if teaser}
 			<p class="esitys-teaser">
 				<em>{teaser}</em>
@@ -59,7 +63,7 @@
 		gap: 1rem;
 		padding-top: 1rem;
 		padding-bottom: 3rem;
-		width: 95%;
+		width: 100%;
 
 		&:not(:first-child) {
 			padding-top: 2rem;
