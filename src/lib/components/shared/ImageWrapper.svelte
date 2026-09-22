@@ -7,12 +7,18 @@
 		title?: string;
 		height?: string;
 		fit?: Fit;
+		cover?: boolean;
 	};
 
-	let { src, alt, title, height = 'auto', fit = 'cover' }: Props = $props();
+	let { src, alt, title, height = 'auto', fit = 'cover', cover }: Props = $props();
 </script>
 
-<div class="image-wrapper" style:--image-fit={fit} style:--image-height={height}>
+<div
+	class="image-wrapper"
+	class:cover-wrapper={cover}
+	style:--image-fit={fit}
+	style:--image-height={height}
+>
 	<enhanced:img {src} {alt} {title} />
 </div>
 
@@ -36,5 +42,12 @@
 		max-width: 100%;
 		max-height: 500px;
 		object-fit: var(--image-fit);
+
+		@media (width <= 700px) {
+			max-height: 100%;
+		}
+	}
+	.cover-wrapper {
+		max-height: 700px;
 	}
 </style>

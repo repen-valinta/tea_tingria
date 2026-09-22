@@ -20,6 +20,16 @@
 
 <main>
 	<EsitysHeader header="Tuliesitykset" />
+	<EsitysSection sectionHeader="Tulisirkus">
+		<VideoComponent source="/video/tuli/fire-teaser.mp4" poster="/video/tuli/fire_teaser.png" />
+		<EsitysInfo
+			info="Tulisirkus on tyylikäs, ajaton ja hyväntuulinen sirkusesitys jossa välineinä tuliviuhkat ja tulivanteita."
+		/>
+		<Tilavaatimus
+			vaatimus="Tilavaatimus 6x7m alue jossa ei ole lähettyvillä syttyviä materiaaleja. Esityksen kesto n. 7 min."
+		/>
+	</EsitysSection>
+
 	<EsitysSection sectionHeader="Quattro">
 		<ImageWrapper src={sytytys2} alt="Nyt syttyy!" title="Nyt syttyy!" />
 		<EsitysInfo
@@ -27,22 +37,11 @@
 			extraInfo="Quattro pohdiskelee aikaansaamisen ja pysähtymisen tasapainoa suhteessa elämään ja ihmissuhteisiin. Esityksen tunnelma vaihtuu jännittävän mesmeroivasta, dramaattiseen ja vahvaan lyriikoiden tulkintaan, ja huipentuu energiseen kipinöivään tuplavanne lopetukseen."
 		/>
 		<ImageGrid>
-			<ImageWrapper src={paras} alt="Ylhäällä" title="Ylhäällä" height="400px" />
-			<ImageWrapper src={sytytys_hyva} alt="Syttyy taas" title="Syttyy taas" height="400px" />
+			<ImageWrapper src={paras} alt="Ylhäällä" title="Ylhäällä" />
+			<ImageWrapper src={sytytys_hyva} alt="Syttyy taas" title="Syttyy taas" />
 		</ImageGrid>
 		<Tilavaatimus
 			vaatimus="Esitys on katsottavissa eri suunnista. Tilavaatimuksena 8x8m alue jossa ei ole lähettyvillä syttyviä materiaaleja. Esityksen kesto 10 min."
-		/>
-	</EsitysSection>
-
-	<EsitysSection sectionHeader="Tulisirkus">
-		<VideoComponent source="/video/tuli/fire-teaser.mp4" poster="" />
-
-		<EsitysInfo
-			info="Tulisirkus on tyylikäs, ajaton ja hyväntuulinen sirkusesitys jossa välineinä tuliviuhkat ja tulivanteita."
-		/>
-		<Tilavaatimus
-			vaatimus="Tilavaatimus 6x7m alue jossa ei ole lähettyvillä syttyviä materiaaleja. Esityksen kesto n. 7 min."
 		/>
 	</EsitysSection>
 </main>

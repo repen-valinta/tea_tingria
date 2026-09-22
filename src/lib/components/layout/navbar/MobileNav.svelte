@@ -50,13 +50,8 @@
 		left: 1rem;
 		top: 1rem;
 		border-radius: 50%;
-		background: rgb(255 255 255 / 7.5%);
 		backdrop-filter: blur(4px);
 		padding: 0.25rem;
-
-		/* & img {
-			transform: translateY(-8px);
-		} */
 	}
 
 	.mobile-nav-button {

@@ -15,7 +15,7 @@
 	<EsitysHeader header="Monivanne" />
 	<div class="wrapper"></div>
 	<EsitysSection sectionHeader="Bangarang">
-		<VideoComponent source="/video/monivanne/bangarang.mp4" poster="" />
+		<VideoComponent source="/video/monivanne/bangarang.mp4" poster="/video/monivanne/banga.png" />
 		<EsitysInfo
 			info="'Bangarang' on kaikista uusin ja raikkain numero ja energinen pläjäys vuosien varrelta koottuja lempitemppuja. Tunnelma vaihtuu tummanpuhuvasta dynaamiseen ja näyttävään lopetukseen vanteiden määrän kasvaessa maksimiin!"
 		/>

@@ -22,15 +22,23 @@
 <main>
 	<EsitysHeader header="Burleski" />
 	<EsitysSection sectionHeader="Let's Misbehave">
-		<ImageWrapper src={misbehave2} alt="Let's misbehave" title="Let's misbehave" />
+		<ImageWrapper src={misbehave2} alt="Let's misbehave" title="Let's misbehave" cover />
 		<EsitysInfo
 			teaser="There’s something wild about you child that’s so contageous, let’s be outrageus, let’s misbehave!"
 			info="
 			Energinen ja pikkutuhma 20-luvun burleskinumero, jossa vaatteet vähenevät tyylikkäästi vannetemppujen kohinassa. Vuodesta 2019 esitetty, ja loppuunhiottu show joka ei jätä ketään kylmäksi."
 		/>
 		<ImageGrid>
-			<ImageWrapper src={misbehave1} alt="" title="" height="400px" />
-			<ImageWrapper src={misbehave3} alt="" title="" height="400px" />
+			<ImageWrapper
+				src={misbehave1}
+				alt="Let's misbehave some more"
+				title="Let's misbehave some more"
+			/>
+			<ImageWrapper
+				src={misbehave3}
+				alt="Let's misbehave some more x2"
+				title="Let's misbehave some more x2"
+			/>
 		</ImageGrid>
 		<Tilavaatimus vaatimus="Tilavaatimus minimi 2x3m ja kesto 4:40 min" />
 	</EsitysSection>
@@ -41,8 +49,8 @@
 			info="Control on uniikki vanneburleskinumero joka pistää pistää päät pyörälle! Kasarityylinen sirkusburleskinumero Control on tarina itsenäisyydestä, sekä kurinalaisuuden ja leikin keskenäisestä tasapainosta."
 		/>
 		<ImageGrid>
-			<ImageWrapper src={control1} alt="" title="" height="400px" />
-			<ImageWrapper src={control2} alt="" title="" height="400px" />
+			<ImageWrapper src={control1} alt="control 2" title="control 2" />
+			<ImageWrapper src={control2} alt="control 3" title="control 3" />
 		</ImageGrid>
 		<Tilavaatimus vaatimus="Tilavaatimus 3x3m, ja kesto 6 min" />
 	</EsitysSection>
