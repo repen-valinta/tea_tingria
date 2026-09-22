@@ -20,6 +20,7 @@
 	.image-wrapper {
 		display: flex;
 		justify-content: center;
+		width: fit-content;
 		max-width: 100%;
 		overflow: hidden;
 		border-radius: var(--radius-m);
@@ -31,7 +32,7 @@
 
 	.image-wrapper :global(img) {
 		width: auto;
-		height: var(--image-height); /* 'auto' by default */
+		height: var(--image-height);
 		max-width: 100%;
 		max-height: 500px;
 		object-fit: var(--image-fit);

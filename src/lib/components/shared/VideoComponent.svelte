@@ -15,10 +15,9 @@
 
 <style>
 	.video-component-container {
-		margin: 2rem 0 0 1rem;
 		width: fit-content;
 		max-width: 100%;
-		margin-inline: auto; /* drop this if you want it left-aligned */
+		margin-inline: auto;
 		overflow: hidden;
 		border-radius: var(--radius-l);
 
@@ -28,15 +27,17 @@
 	}
 
 	.video-component {
-		display: block; /* removes the baseline gap under inline video */
+		display: block;
 		width: auto;
 		height: auto;
 		max-width: 100%;
+
 		max-height: min(60svh, 800px);
 		pointer-events: none;
 
 		@media (width <= 680px) {
-			max-height: min(60svh, 600px);
+			height: min(350px, 600px);
+			object-fit: cover;
 		}
 	}
 </style>

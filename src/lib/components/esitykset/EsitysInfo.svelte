@@ -3,10 +3,9 @@
 		teaser?: string;
 		info: string;
 		extraInfo?: string;
-		vaatimus?: string;
 	};
 
-	let { teaser, info, extraInfo, vaatimus }: Props = $props();
+	let { teaser, info, extraInfo }: Props = $props();
 </script>
 
 <section class="esitys-section-content bigger-text-sm">
@@ -24,12 +23,6 @@
 		<p class="esitys-info">
 			{extraInfo}
 		</p>
-	{/if}
-
-	{#if vaatimus}
-		<div class="esitys-vaatimus">
-			{vaatimus}
-		</div>
 	{/if}
 </section>
 
@@ -49,21 +42,11 @@
 	}
 
 	.esitys-info,
-	.esitys-teaser,
-	.esitys-vaatimus {
+	.esitys-teaser {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 		width: min(100%, 1000px);
 		text-wrap: pretty;
-	}
-
-	.esitys-vaatimus {
-		color: var(--text-light-muted);
-		text-align: center;
-		text-wrap: balance;
-		font-size: 0.95em;
-		font-weight: 300;
-		padding-top: 1rem;
 	}
 </style>
