@@ -28,7 +28,7 @@
 
 <style>
 	.esitys-header {
-		padding: 2rem 0 0.25rem;
+		padding: 2rem 0 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

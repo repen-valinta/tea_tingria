@@ -6,7 +6,7 @@
 <div class="desktop-nav">
 	<div class="nav-content wrapper">
 		<a class="nav-logo" href={resolve('/')}>
-			<img src="/icons/logo-transparent-comp.png" alt="logo" title="logo" height="48" />
+			<img src="/icons/logo-transparent-crop.png" alt="logo" title="logo" height="36" />
 		</a>
 		<NavLinks />
 	</div>
@@ -39,10 +39,6 @@
 		top: 50%;
 		left: 1rem;
 		transform: translateY(-50%);
-
-		& img {
-			transform: translateY(4px);
-		}
 	}
 
 	/* @media (width > 680px) {
