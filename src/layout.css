@@ -11,10 +11,18 @@
 
 .bigger-text {
 	font-size: 1.25rem;
+
+	@media (width <= 680px) {
+		font-size: 1.125rem;
+	}
 }
 
 .bigger-text-sm {
 	font-size: 1.125rem;
+
+	@media (width <= 680px) {
+		font-size: 1rem;
+	}
 }
 
 .text-center-balance {

@@ -39,6 +39,10 @@
 	.esitys-teaser {
 		text-wrap: balance;
 		text-align: center;
+
+		& em {
+			text-wrap: balance;
+		}
 	}
 
 	.esitys-info,
@@ -46,7 +50,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		width: min(100%, 1000px);
+		width: min(100%, 800px);
 		text-wrap: pretty;
 	}
 </style>
