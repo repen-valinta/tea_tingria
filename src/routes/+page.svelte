@@ -67,7 +67,7 @@
 		margin: 1.5rem auto 0;
 		box-shadow:
 			inset 4px 4px 16px rgb(from white r g b / 0.5),
-			4px 4px 16px rgb(from var(--accent-xlight) r g b / 0.5);
+			var(--shadow-s-accent);
 
 		@media (width <= 680px) {
 			font-size: 1.25rem;

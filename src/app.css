@@ -84,6 +84,10 @@ a {
 		radial-gradient(ellipse at 90% 70%, rgb(from var(--accent-dark) r g b / 0.22), transparent 35%),
 		linear-gradient(180deg, #000 0%, var(--neutral-xdark) 25%, var(--neutral-xxdark) 100%);
 
+	/* BOX-SHADOW */
+	--shadow-s: 0 8px 16px rgb(from black r g b / 0.25);
+	--shadow-s-accent: 0 8px 16px rgb(from var(--accent-light) r g b / 0.25);
+
 	/* COLORS */
 	--text-dark: var(--neutral-xxdark);
 	--text-dark-muted: var(--neutral-base);
