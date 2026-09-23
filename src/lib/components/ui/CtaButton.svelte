@@ -29,5 +29,9 @@
 		&:hover {
 			background-color: var(--accent-light);
 		}
+
+		&:active {
+			background-color: var(--accent-base);
+		}
 	}
 </style>

@@ -40,7 +40,7 @@
 		width: auto;
 		height: var(--image-height);
 		max-width: 100%;
-		max-height: 500px;
+		max-height: 600px;
 		object-fit: var(--image-fit);
 
 		@media (width <= 700px) {
