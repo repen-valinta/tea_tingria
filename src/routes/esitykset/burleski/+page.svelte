@@ -43,7 +43,7 @@
 		<Tilavaatimus vaatimus="Tilavaatimus minimi 2x3m ja kesto 4:40 min" />
 	</EsitysSection>
 	<EsitysSection sectionHeader="Control">
-		<ImageWrapper src={control_wide} alt="Control" title="Control" />
+		<ImageWrapper src={control_wide} alt="Control" title="Control" cover />
 		<EsitysInfo
 			teaser="I hope you enjoy this as much as I do. Are we ready? I am. Cause it's all about control. And I've got lots of it."
 			info="Control on uniikki vanneburleskinumero joka pistää pistää päät pyörälle! Kasarityylinen sirkusburleskinumero Control on tarina itsenäisyydestä, sekä kurinalaisuuden ja leikin keskenäisestä tasapainosta."

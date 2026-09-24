@@ -1,5 +1,8 @@
 <script>
 	import CtaButton from '$lib/components/ui/CtaButton.svelte';
+	import FacebookIcon from '$lib/components/ui/icons/FacebookIcon.svelte';
+	import InstagramIcon from '$lib/components/ui/icons/InstagramIcon.svelte';
+	import LinkedInIcon from '$lib/components/ui/icons/LinkedInIcon.svelte';
 	import TextInput from '$lib/components/ui/inputs/TextInput.svelte';
 	import TextInputWrapper from '$lib/components/ui/inputs/TextInputWrapper.svelte';
 </script>
@@ -39,6 +42,34 @@
 				<CtaButton text="Lähetä" />
 			</form>
 		</div>
+		<section class="yritystiedot">
+			<h3>Yritystiedot</h3>
+			<p>Tmi Tea Tingria</p>
+			<p>Pulttitie 16 A PL7</p>
+			<p>00880 Helsinki</p>
+			<p>y-tunnus: 2891833-1</p>
+			<p class="puh">puh: 045 611 6995</p>
+			<div class="yritys-links">
+				<a href="https://www.instagram.com/teatingria/" target="_blank">
+					<div class="icon-wrap">
+						<InstagramIcon aria-hidden="true" strokeWidth="0.85" />
+					</div>
+					<p>Instagram</p></a
+				>
+				<a href="https://www.facebook.com/TeaTingria/" target="_blank">
+					<div class="icon-wrap">
+						<FacebookIcon aria-hidden="true" strokeWidth="0.85" />
+					</div>
+					<p>Facebook</p></a
+				>
+				<a href="https://fi.linkedin.com/in/tea-tingria-2b0938162" target="_blank">
+					<div class="icon-wrap">
+						<LinkedInIcon aria-hidden="true" strokeWidth="0.85" />
+					</div>
+					<p>LinkedIn</p></a
+				>
+			</div>
+		</section>
 	</div>
 </main>
 
@@ -94,6 +125,45 @@
 		@media (width <= 680px) {
 			padding-inline: 1.5rem;
 		}
+	}
+
+	.yritystiedot {
+		display: flex;
+		flex-direction: column;
+		width: min(100%, 600px);
+	}
+
+	.puh {
+		margin-top: 1rem;
+	}
+
+	.yritys-links {
+		display: flex;
+		margin-top: 0.5rem;
+		gap: 1rem;
+
+		@media (width <= 580px) {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		& a {
+			display: flex;
+			align-items: center;
+			gap: 0 0.25rem;
+
+			&:hover {
+				color: var(--accent-xlight);
+			}
+
+			& p {
+				transform: translateY(2px);
+			}
+		}
+	}
+
+	.icon-wrap {
+		height: 1.75cap;
 	}
 
 	textarea {

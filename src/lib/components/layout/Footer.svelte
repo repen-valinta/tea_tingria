@@ -1,5 +1,8 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import FacebookIcon from '$lib/components/ui/icons/FacebookIcon.svelte';
+	import InstagramIcon from '$lib/components/ui/icons/InstagramIcon.svelte';
+	import LinkedInIcon from '$lib/components/ui/icons/LinkedInIcon.svelte';
+
 	const year = new Date().getFullYear();
 </script>
 
@@ -9,10 +12,19 @@
 			<p>&copy; {year} Tea Tingria</p>
 		</div>
 		<div class="footer-info">
-			<a href={resolve('/yhteystiedot')}>Ota yhteyttä</a>
-			<a href="#bottom">some</a>
-			<a href="#bottom">some</a>
-			<a href="#bottom">some</a>
+			<a href="https://www.instagram.com/teatingria/" target="_blank" aria-label="Instagram">
+				<InstagramIcon aria-hidden="true" strokeWidth="0.85" />
+			</a>
+			<a href="https://www.facebook.com/TeaTingria/" target="_blank" aria-label="Facebook">
+				<FacebookIcon aria-hidden="true" strokeWidth="0.85" />
+			</a>
+			<a
+				href="https://fi.linkedin.com/in/tea-tingria-2b0938162"
+				target="_blank"
+				aria-label="LinkedIn"
+			>
+				<LinkedInIcon aria-hidden="true" strokeWidth="0.85" />
+			</a>
 		</div>
 	</div>
 </footer>
@@ -58,9 +70,19 @@
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		color: var(--text-light-muted);
 
-		& a:hover {
-			color: var(--accent-xlight);
+		& a {
+			height: 24px;
+			display: flex;
+			color: inherit;
+			transition: all 150ms ease;
+
+			&:hover,
+			&:focus-visible {
+				color: var(--accent-xlight);
+				transform: scale(1.1);
+			}
 		}
 	}
 </style>

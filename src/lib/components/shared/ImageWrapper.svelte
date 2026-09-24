@@ -49,5 +49,10 @@
 	}
 	.cover-wrapper {
 		max-height: 700px;
+
+		@media (width <= 680px) {
+			height: min(350px, 600px);
+			object-fit: cover;
+		}
 	}
 </style>
