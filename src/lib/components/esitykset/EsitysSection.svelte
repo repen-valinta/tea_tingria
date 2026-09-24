@@ -52,5 +52,9 @@
 	.normal-text {
 		/* font-family: var(--font-body); */
 		text-transform: uppercase;
+
+		@media (width <= 680px) {
+			font-size: 1.125rem;
+		}
 	}
 </style>
