@@ -19,7 +19,7 @@ export const actions: Actions = {
 
 		if (isContactRateLimited(getClientKey(request))) {
 			return fail(429, {
-				sendError: 'Liian monta yhteydenottoa. Yritä hetken kuluttua.'
+				sendError: 'Liian monta yhteydenottoa. Yritä hetken kuluttua uudelleen.'
 			});
 		}
 
