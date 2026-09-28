@@ -14,5 +14,11 @@
 		border-radius: var(--radius-m);
 		font-size: 0.95rem;
 		border: 1px solid transparent;
+		outline: none;
+		caret-color: var(--accent-light);
+
+		&:focus-visible {
+			border: 2px solid var(--accent-light);
+		}
 	}
 </style>
