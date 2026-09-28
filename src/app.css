@@ -123,7 +123,7 @@ a {
 	--neutral-950: #0b0b0b;
 
 	--accent: #e3cffb;
-	--accent-50: ##d7baf8;
+	--accent-50: #d7baf8;
 	--accent-100: #f3eafd;
 	--accent-200: #e3cffb;
 	--accent-300: #d7baf8;
@@ -134,4 +134,14 @@ a {
 	--accent-800: #682b9e;
 	--accent-900: #55247f;
 	--accent-950: #380e5d;
+
+	--color-error: #f87171;
+	--color-error-bg: #450a0a;
+	--color-error-border: #991b1b;
+	--color-error-text: #fecaca;
+
+	--color-success: #4ade80;
+	--color-success-bg: #052e16;
+	--color-success-border: #166534;
+	--color-success-text: #bbf7d0;
 }

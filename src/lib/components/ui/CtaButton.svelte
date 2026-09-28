@@ -1,5 +1,7 @@
 <script lang="ts">
-	type CtaButtonProps = {
+	import type { HTMLButtonAttributes } from 'svelte/elements';
+
+	type CtaButtonProps = HTMLButtonAttributes & {
 		text: string;
 	};
 

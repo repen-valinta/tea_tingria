@@ -45,6 +45,7 @@
     "wrangler": "^4.97.0"
   },
   "dependencies": {
-    "@lucide/svelte": "^1.47.0"
+    "@lucide/svelte": "^1.47.0",
+    "resend": "^6.30.0"
   }
 }
