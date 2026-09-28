@@ -11,8 +11,6 @@ export const actions: Actions = {
 	default: async ({ request }) => {
 		const formData = await request.formData();
 
-		// This field is intentionally not announced to assistive technology. A filled
-		// value is a strong signal that an automated client submitted the form.
 		if (formData.get('website')) {
 			return { success: true };
 		}
