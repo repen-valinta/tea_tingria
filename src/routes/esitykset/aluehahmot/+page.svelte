@@ -31,7 +31,7 @@
 			/>
 		</ImageGrid>
 		<EsitysInfo
-			info="Kissat liikkuvat yleisän seassa kujeillen ja vieraita leikkisästi kiusaten. Kissojen kanssa voi napata tapahtumassa ikimuistoisia kuvia, ja mikäli tilaan ja budjettiisi passaa, voivat kissat tehdä myös elegantisti saippuakuplia kissailun lomassa!"
+			info="Kissat liikkuvat yleisön seassa kujeillen ja vieraita leikkisästi kiusaten. Kissojen kanssa voi napata tapahtumassa ikimuistoisia kuvia, ja mikäli tilaan ja budjettiisi passaa, voivat kissat tehdä myös elegantisti saippuakuplia kissailun lomassa!"
 		/>
 	</EsitysSection>
 </main>
