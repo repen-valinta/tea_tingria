@@ -9,7 +9,6 @@
 
 	import sytytys2 from '$lib/assets/images/esitykset/tuliesitykset/sytytys2.webp';
 	import paras from '$lib/assets/images/esitykset/tuliesitykset/paras.webp';
-	// import lanteilla from '$lib/assets/images/esitykset/tuliesitykset/lanteilla.webp';
 	import sytytys_hyva from '$lib/assets/images/esitykset/tuliesitykset/sytytys_hyva.webp';
 </script>
 
@@ -21,7 +20,10 @@
 <main>
 	<EsitysHeader header="Tuliesitykset" />
 	<EsitysSection sectionHeader="Tulisirkus">
-		<VideoComponent source="/video/tuli/fire-teaser.mp4" poster="/video/tuli/fire_teaser.png" />
+		<VideoComponent
+			source="/video/tuli/fire-teaser-crop.mp4"
+			poster="/video/tuli/fire_teaser.png"
+		/>
 		<EsitysInfo
 			info="Tulisirkus on tyylikäs, ajaton ja hyväntuulinen sirkusesitys jossa välineinä tuliviuhkat ja tulivanteita."
 		/>
