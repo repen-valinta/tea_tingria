@@ -16,7 +16,7 @@
 <style>
 	.video-component-container {
 		width: fit-content;
-		max-width: 100%;
+		max-width: 1000px;
 		margin-inline: auto;
 		overflow: hidden;
 		border-radius: var(--radius-l);
