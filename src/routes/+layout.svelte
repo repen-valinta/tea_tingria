@@ -10,9 +10,7 @@
 
 <svelte:head>
 	<link rel="icon" href={logo} />
-
 	<meta property="og:image" content="https://teatingria.com/images/og-image.webp" />
-
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image" content="https://teatingria.com/images/og-image.webp" />
 </svelte:head>
