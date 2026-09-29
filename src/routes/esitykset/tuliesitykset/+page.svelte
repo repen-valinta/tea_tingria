@@ -22,7 +22,7 @@
 	<EsitysSection sectionHeader="Tulisirkus">
 		<VideoComponent
 			source="/video/tuli/fire-teaser-crop.mp4"
-			poster="/video/tuli/fire_teaser.png"
+			poster="/video/tuli/fire_teaser.webp"
 		/>
 		<EsitysInfo
 			info="Tulisirkus on tyylikäs, ajaton ja hyväntuulinen sirkusesitys jossa välineinä tuliviuhkat ja tulivanteita."
